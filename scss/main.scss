@@ -57,7 +57,7 @@ ul {
 
 /* Job Card Styles */ 
 
-.job__card {
+.job__container {
     padding: 20px 20px 10px;
     background-color: white;
     border-radius: 5px;
@@ -68,6 +68,19 @@ ul {
     margin-bottom: 50px;
     position: relative;
 }
+
+.job__card {
+    display: flex;
+}
+
+.logo__container {
+    position: absolute;
+    width: 40px; 
+    height: 40px;
+    top: -25px;
+}
+
+
 
 
 /* Attribution styles */
