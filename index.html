@@ -6,17 +6,43 @@
   <meta name="author" content="T.Lanette Pollard">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="stylesheet" href="dist/css/main.css">
   
-  <title>Frontend Mentor | Job Listings</title>
+  <title>Frontend Mentor | Job Listings TLP</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
+  <header class="header">
+    <div class="wrapper">
+      <div class="header__container"></div><!--.header__container-->
+    </div>
+  </header>
+  <div class="tag__container">
+    <input placeholder="Enter the tag to search..." />
+  </div><!--.tag__container-->
   <!-- Item Start -->
+  <div class="job__cards">
+    <div class="job__card">
+      <img class="logo" src="images/photosnap.svg" />
+      <div class="job__data">
+        <div class="company-container">
+          <div class="highlighted new"></div>
+          <div class="hightlighted featured"></div>
+        </div><!--.company-container-->
+        <div class="position-container">
+          <h2 class="job__title"></h2>
+          <ul class="descriptions">
+            <li class="description"></li>
+            <li class="description"></li>
+            <li class="description"></li>
+          </ul><!--.descriptions-->
+        </div><!--.position-container-->
+      </div><!--.job__data-->
+    </div><!--.job__card-->
+
+  </div><!--.job__cards-->
   Photosnap
   New!
   Featured
