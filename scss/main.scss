@@ -75,8 +75,8 @@ ul {
 
 .logo__container {
     position: absolute;
-    width: 40px; 
-    height: 40px;
+    width: 60px; 
+    height: 60px;
     top: -25px;
 }
 
@@ -88,9 +88,10 @@ ul {
     margin: 60px 0;
 }
 
-.comopany-container {
+.company-container {
     display: flex;
     align-items: center;
+    margin-top: -20px;
 }
 
 .company {
@@ -124,6 +125,51 @@ ul {
     background-color: $very-dk-gray-cyan;
 }
 
+.role {
+    font-size: 18px;
+    margin: 0 0 14px;
+    padding-top: 10px;
+    cursor: pointer;
+}
+
+.job-status {
+    display: flex;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.status {
+    line-height: 17px;
+    list-style: none;
+}
+
+.status:nth-of-type(2){
+    padding: 0 20px;
+    margin: 0 20px;
+    position: relative;
+}
+
+.status:nth-of-type(2):after,
+.status:nth-of-type(2):before {
+    position: absolute;
+    left: 0;
+    display: block;
+    height: 4px;
+    width: 4px;
+    top: calc(50% - 2px);
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    content: "";
+}
+
+.status:nth-of-type(2):after {
+    left: initial;
+    right: 0;
+}
+
+.active {
+    list-style: none;
+    margin-left: 0;
+}
 
 
 /* Attribution styles */
