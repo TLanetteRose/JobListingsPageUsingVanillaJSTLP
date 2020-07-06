@@ -1,0 +1,74 @@
+/* Mobile First Design */
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;600;700&display=swap");
+/* Variables */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outine: 1px solid black;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  font-family: "Spartan", sans-serif;
+  font-size: 15px;
+  background: #effafa;
+}
+
+.wrapper {
+  max-width: 1200px;
+  padding: 0 25px;
+  margin: 0 auto;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+/* Header Styles */
+.header {
+  background-image: url("/images/bg-header-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #5ba4a4;
+  margin-bottom: 80px;
+}
+
+.header__container {
+  min-height: 160px;
+  position: relative;
+}
+
+/* Job Card Styles */
+.job__card {
+  padding: 20px 20px 10px;
+  background-color: white;
+  border-radius: 5px;
+  -webkit-box-shadow: 2px 15px 30px -20px rgba(0, 0, 0, 0.3);
+          box-shadow: 2px 15px 30px -20px rgba(0, 0, 0, 0.3);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+/* Attribution styles */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+/*# sourceMappingURL=main.css.map */

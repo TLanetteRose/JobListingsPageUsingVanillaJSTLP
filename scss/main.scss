@@ -1,0 +1,82 @@
+/* Mobile First Design */
+
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;600;700&display=swap');
+
+/* Variables */
+$desaturated-dk-cyan: hsl(180, 29%, 50%);
+$bg-lt-gray-cyan: hsl(180, 52%, 96%);
+$filter-tab-lt-gray-cyan: hsl(180, 31%, 95%);
+$dk-gray-cyan: hsl(180, 8%, 52%);
+$very-dk-gray-cyan: hsl(180, 14%, 20%);
+$header-cyan: hsl(180, 29%, 50%);
+$attribution-link: hsl(228, 45%, 44%);
+$font-family: "Spartan", sans-serif;
+$font-size: 15px;
+
+* {
+    box-sizing: border-box;
+    outine: 1px solid black;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    font-family: $font-family;
+    font-size: $font-size;
+    background: $bg-lt-gray-cyan;
+}
+
+.wrapper {
+    max-width: 1200px;
+    padding: 0 25px;
+    margin: 0 auto;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+
+
+/* Header Styles */
+
+.header {
+    background-image: url("/images/bg-header-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: $header-cyan;
+    margin-bottom: 80px;
+}
+
+.header__container {
+    min-height: 160px;
+    position: relative;
+}
+
+/* Job Card Styles */ 
+
+.job__card {
+    padding: 20px 20px 10px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 2px 15px 30px -20px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+
+/* Attribution styles */
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}

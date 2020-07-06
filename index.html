@@ -6,189 +6,419 @@
   <meta name="author" content="T.Lanette Pollard">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="stylesheet" href="dist/css/main.css">
   
-  <title>Frontend Mentor | Job Listings</title>
+  <title>Frontend Mentor | Job Listings TLP</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
-  <!-- Item Start -->
-  Photosnap
-  New!
-  Featured
-  Senior Frontend Developer
-  1d ago
-  Full Time
-  USA only
-  <!-- Role -->
-  Frontend
-  <!-- Level -->
-  Senior
-  <!-- Languages -->
-  HTML
-  CSS
-  JavaScript
-  <!-- Item End -->
+  <header class="header">
+    <div class="wrapper">
+      <div class="header__container"></div><!--.header__container-->
+    </div>
+  </header>
+  <div class="tag__container">
+    <input placeholder="Enter the tag to search..." />
+  </div><!--.tag__container-->
 
   <!-- Item Start -->
-  Manage
-  New!
-  Featured
-  Fullstack Developer
-  1d ago
-  Part Time
-  Remote
-  <!-- Role -->
-  Fullstack
-  <!-- Level -->
-  Midweight
-  <!-- Languages -->
-  Python
-  <!-- Tools -->
-  React
-  <!-- Item End -->
+  <div class="job__cards">
+   <div class="wrapper">
+    <div class="job-container">
+      <div class="job__card">
+        <div class="logo-container"><img class="logo" src="images/photosnap.svg" /></div>
+        <div class="job__data">
+          <div class="company-container">
+            <h3 class="company">Photosnap</h3>
+            <span class="highlighted new">New!</span>
+            <span class="hightlighted featured">Featured</span>
+          </div><!--.company-container-->
+          <div class="role-container">
+            <h2 class="role">Senior Frontend Developer</h2>
+            <ul class="job-status">
+              <li class="active">1d ago</li>
+              <li>Full Time</li>
+              <li>USA only</li>
+            </ul><!--.descriptions-->
+            <ul class="tags">
+              <li><button data-role="frontend" class="tag">Frontend</button>
+              </li>
+              <li><button data-level="senior" class="tag">Senior</button>
+              </li>
+              <li><button data-languages="html" class="tag">HTML</button>
+              </li>
+              <li><button data-languages="css" class="tag">CSS</button>
+              </li>
+              <li><button data-languages="javascript" class="tag">JavaScript</button>
+              </li>
+            </ul><!--.tags-->
+          </div><!--.role-container-->
+        </div><!--.job__data-->
+      </div><!--.job__card-->
+    </div><!--.job-container-->
 
-  <!-- Item Start -->
-  Account
-  New!
-  Junior Frontend Developer
-  2d ago
-  Part Time
-  USA only
-  <!-- Role -->
-  Frontend
-  <!-- Level -->
-  Junior
-  <!-- Languages -->
-  JavaScript
-  <!-- Tools -->
-  React
-  Sass
-  <!-- Item End -->
+    <div class="job-container">
+      <div class="job__card">
+        <div class="logo-container"><img class="logo" src="images/manage.svg" />
+        </div>
+        <div class="job__data">
+          <div class="company-container">
+            <h3 class="company">Manage</h3>
+            <div class="highlighted new">New!</div>
+            <div class="hightlighted featured">Featured</div>
+          </div><!--.company-container-->
+          <div class="role-container">
+            <h2 class="role">Fullstack Developer</h2>
+            <ul class="job-status">
+              <li class="active">1d ago</li>
+              <li>Part Time</li>
+              <li>Remote</li>
+            </ul><!--.descriptions-->
+          </div><!--.role-container-->
+        </div><!--.job__data-->
+        <ul class="skills">
+          <li><button data-role="fullstack" class="skill">Fullstack</button>
+          </li>
+          <li><button data-level="midweight" class="skill">Midweight</button>
+          </li>
+          <li><button data-languages="python" class="skill">Python</button>
+          </li>
+          <li><button data-tools="react" class="skill">React</button>
+          </li>
+        </ul><!--.skills-->
+      </div><!--.job__card-->
+    </div><!--.job-container-->
 
-  <!-- Item Start -->
-  MyHome
-  Junior Frontend Developer
-  5d ago
-  Contract
-  USA only
-  <!-- Role -->
-  Frontend
-  <!-- Level -->
-  Junior
-  <!-- Languages -->
-  CSS
-  JavaScript
-  <!-- Item End -->
-
-  <!-- Item Start -->
-  Loop Studios
-  Software Engineer
-  1w ago
-  Full Time
-  Worldwide
-  <!-- Role -->
-  Fullstack
-  <!-- Level -->
-  Midweight
-  <!-- Languages -->
-  JavaScript
-  Ruby
-  <!-- Tools -->
-  Sass
-  <!-- Item End -->
-
-  <!-- Item Start -->
-  FaceIt
-  Junior Backend Developer
-  2w ago
-  Full Time
-  UK only
-  <!-- Role -->
-  Backend
-  <!-- Level -->
-  Junior
-  <!-- Languages -->
-  Ruby
-  <!-- Tools -->
-  RoR
-  <!-- Item End -->
-
-  <!-- Item Start -->
-  Shortly
-  Junior Developer
-  2w ago
-  Full Time
-  Worldwide
-  <!-- Role -->
-  Frontend
-  <!-- Level -->
-  Junior
-  <!-- Languages -->
-  HTML
-  JavaScript
-  <!-- Tools -->
-  Sass
-  <!-- Item End -->
-
-  <!-- Item Start -->
-  Insure
-  Junior Frontend Developer
-  2w ago
-  Full Time
-  USA only
-  <!-- Role -->
-  Frontend
-  <!-- Level -->
-  Junior
-  <!-- Languages -->
-  JavaScript
-  <!-- Tools -->
-  Vue
-  Sass
-  <!-- Item End -->
-
-  <!-- Item Start -->
-  Eyecam Co.
-  Full Stack Engineer
-  3w ago
-  Full Time
-  Worldwide
-  <!-- Role -->
-  Fullstack
-  <!-- Level -->
-  Midweight
-  <!-- Languages -->
-  JavaScript
-  Python
-  <!-- Tools -->
-  Django
-  <!-- Item End -->
-
-  <!-- Item Start -->
-  The Air Filter Company
-  Front-end Dev
-  1mo ago
-  Part Time
-  Worldwide
-  <!-- Role -->
-  Frontend
-  <!-- Level -->
-  Junior
-  <!-- Languages -->
-  JavaScript
-  <!-- Tools -->
-  React
-  Sass
-  <!-- Item End -->
+    <!--Trista add job container, logo container, change to role from position-->
+    
+    <div class="job__card">
+      <img class="logo" src="images/account.svg" />
+      <div class="job__data">
+        <div class="company-container">
+          <h3 class="company">Account</h3>
+          <div class="highlighted new">New!</div>
+        </div>
+        <!--.company-container-->
+        <div class="position-container">
+          <h2 class="role">Junior Frontend Developer</h2>
+          <ul class="job-status">
+            <li class="active">2d ago</li>
+            <li>Part Time</li>
+            <li>USA only</li>
+          </ul>
+          <!--.descriptions-->
+        </div>
+        <!--.position-container-->
+      </div>
+      <!--.job__data-->
+    </div>
+    <!--.job__card-->
+    <ul class="skills">
+      <li>
+        <button data-role="frontend" class="skill">Frontend</button>
+      </li>
+      <li>
+        <button data-level="junior" class="skill">Junior</button>
+      </li>
+      <li>
+        <button data-languages="javascript" class="skill">JavaScript</button>
+      </li>
+      <li>
+        <button data-tools="react" class="skill">React</button>
+      </li>
+      <li>
+        <button data-tools="sass" class="skill">Sass</button>
+      </li>
+    </ul><!--.skills-->
   
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+    <div class="job__card">
+      <img class="logo" src="images/myhome.svg" />
+      <div class="job__data">
+        <div class="company-container">
+          <h3 class="company">MyHome</h3>
+        </div>
+        <!--.company-container-->
+        <div class="position-container">
+          <h2 class="role">Junior Frontend Developer</h2>
+          <ul class="job-status">
+            <li class="active">5d ago</li>
+            <li>Contract</li>
+            <li>USA only</li>
+          </ul>
+          <!--.descriptions-->
+        </div>
+        <!--.position-container-->
+      </div>
+      <!--.job__data-->
+    </div>
+    <!--.job__card-->
+    <ul class="skills">
+      <li>
+        <button data-role="frontend" class="skill">Frontend</button>
+      </li>
+      <li>
+        <button data-level="junior" class="skill">Junior</button>
+      </li>
+      <li>
+        <button data-languages="css" class="skill">CSS</button>
+      </li>
+      <li>
+        <button data-languages="javascript" class="skill">JavaScript</button>
+      </li>
+    </ul>
+    <!--.skills-->
+    
+    <div class="job__card">
+      <img class="logo" src="images/loop-studios.svg" />
+      <div class="job__data">
+        <div class="company-container">
+          <h3 class="company">Loop Studios</h3>
+        </div>
+        <!--.company-container-->
+        <div class="position-container">
+          <h2 class="role">Software Engineer</h2>
+          <ul class="job-status">
+            <li class="active">1w ago</li>
+            <li>Full Time</li>
+            <li>Worldwide</li>
+          </ul>
+          <!--.descriptions-->
+        </div>
+        <!--.position-container-->
+      </div>
+      <!--.job__data-->
+    </div>
+    <!--.job__card-->
+    <ul class="skills">
+      <li>
+        <button data-role="fullstack" class="skill">Fullstack</button>
+      </li>
+      <li>
+        <button data-level="midweight" class="skill">Midweight</button>
+      </li>
+      <li>
+        <button data-languages="javascript" class="skill">JavaScript</button>
+      </li>
+      <li>
+        <button data-languages="ruby" class="skill">Ruby</button>
+      </li>
+      <li>
+        <button data-tools="sass" class="skill">Sass</button>
+      </li>
+    </ul>
+    <!--.skills-->
+
+    <div class="job__card">
+      <img class="logo" src="images/faceit.svg" />
+      <div class="job__data">
+        <div class="company-container">
+          <h3 class="company">FaceIt</h3>
+        </div>
+        <!--.company-container-->
+        <div class="position-container">
+          <h2 class="role">Junior Backend Developer</h2>
+          <ul class="job-status">
+            <li class="active">2w ago</li>
+            <li>Full Time</li>
+            <li>UK only</li>
+          </ul>
+          <!--.descriptions-->
+        </div>
+        <!--.position-container-->
+      </div>
+      <!--.job__data-->
+    </div>
+    <!--.job__card-->
+    <ul class="skills">
+      <li>
+        <button data-role="backend" class="skill">Backend</button>
+      </li>
+      <li>
+        <button data-level="junior" class="skill">Junior</button>
+      </li>
+      <li>
+        <button data-languages="ruby" class="skill">Ruby</button>
+      </li>
+      <li>
+        <button data-tools="ror" class="skill">RoR</button>
+      </li>
+    </ul>
+    <!--.skills-->
+   
+    <div class="job__card">
+      <img class="logo" src="images/shortly.svg" />
+      <div class="job__data">
+        <div class="company-container">
+          <h3 class="company">Shortly</h3>
+        </div>
+        <!--.company-container-->
+        <div class="position-container">
+          <h2 class="job__title">Junior Developer</h2>
+          <ul class="job-status">
+            <li class="active">2w ago</li>
+            <li>Full Time</li>
+            <li>Worldwide</li>
+          </ul>
+          <!--.descriptions-->
+        </div>
+        <!--.position-container-->
+      </div>
+      <!--.job__data-->
+    </div>
+    <!--.job__card-->
+    <ul class="skills">
+      <li>
+        <button data-role="frontend" class="skill">Frontend</button>
+      </li>
+      <li>
+        <button data-level="junior" class="skill">Junior</button>
+      </li>
+      <li>
+        <button data-languages="html" class="skill">HTML</button>
+      </li>
+      <li>
+        <button data-languages="javascript" class="skill">JavaScript</button>
+      </li>
+      <li>
+        <button data-tools="Sass" class="skill"></button>
+      </li>
+    </ul>
+    <!--.skills-->
+
+    <div class="job__card">
+      <img class="logo" src="images/photosnap.svg" />
+      <div class="job__data">
+        <div class="company-container">
+          <h3 class="company">Insure</h3>
+        </div>
+        <!--.company-container-->
+        <div class="position-container">
+          <h2 class="job__title">Junior Frontend Developer</h2>
+          <ul class="job-status">
+            <li class="active">2w ago</li>
+            <li>Full Time</li>
+            <li>USA only</li>
+          </ul>
+          <!--.descriptions-->
+        </div>
+        <!--.position-container-->
+      </div>
+      <!--.job__data-->
+    </div>
+    <!--.job__card-->
+    <ul class="skills">
+      <li>
+        <button data-role="frontend" class="skill">Frontend</button>
+      </li>
+      <li>
+        <button data-level="junior" class="skill">Junior</button>
+      </li>
+      <li>
+        <button data-languages="javascript" class="skill">JavaScript</button>
+      </li>
+      <li>
+        <button data-tools="vue" class="skill">Vue</button>
+      </li>
+      <li>
+        <button data-tools="sass" class="skill">Sass</button>
+      </li>
+    </ul>
+    <!--.skills-->
+
+    <div class="job__card">
+      <img class="logo" src="images/eyecam-co.svg" />
+      <div class="job__data">
+        <div class="company-container">
+          <h3 class="company">Eyecam Co.</h3>
+        </div>
+        <!--.company-container-->
+        <div class="position-container">
+          <h2 class="job__title">Full Stack Engineer</h2>
+          <ul class="job-status">
+            <li class="active">3w ago</li>
+            <li>Full Time</li>
+            <li>Worldwide</li>
+          </ul>
+          <!--.descriptions-->
+        </div>
+        <!--.position-container-->
+      </div>
+      <!--.job__data-->
+    </div>
+    <!--.job__card-->
+    <ul class="skills">
+      <li>
+        <button data-role="fullstack" class="skill">Fullstack</button>
+      </li>
+      <li>
+        <button data-level="midweight" class="skill">Midweight</button>
+      </li>
+      <li>
+        <button data-languages="javascript" class="skill">JavaScript</button>
+      </li>
+      <li>
+        <button data-languages="python" class="skill">Python</button>
+      </li>
+      <li>
+        <button data-tools="django" class="skill">Django</button>
+      </li>
+    </ul>
+    <!--.skills-->
+
+    <div class="job__card">
+      <img class="logo" src="images/the-air-filter-company.svg" />
+      <div class="job__data">
+        <div class="company-container">
+          <h3 class="company">The Air Filter Company</h3>
+        </div>
+        <!--.company-container-->
+        <div class="position-container">
+          <h2 class="job__title">Front-end Dev</h2>
+          <ul class="job-status">
+            <li class="active">1mo ago</li>
+            <li>Part Time</li>
+            <li>Worldwide</li>
+          </ul>
+          <!--.descriptions-->
+        </div>
+        <!--.position-container-->
+      </div>
+      <!--.job__data-->
+    </div>
+    <!--.job__card-->
+    <ul class="skills">
+      <li>
+        <button data-role="frontend" class="skill">Frontend</button>
+      </li>
+      <li>
+        <button data-level="junior" class="skill">Junior</button>
+      </li>
+      <li>
+        <button data-languages="javascript" class="skill">JavaScript</button>
+      </li>
+      <li>
+        <button data-tools="react" class="skill">React</button>
+      </li>
+      <li>
+        <button data-tools="sass" class="skill">Sass</button>
+      </li>
+    </ul>
+    <!--.skills-->
+
+   </div><!--.wrapper-->
+  </div><!--.job__cards-->
+
+  <footer>
+    <div class="wrapper">
+      <div class="footer__container">
+        <div class="attribution">
+          Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+          Coded by <a href="https://github.com/TLanetteRose">T.Lanette Pollard</a>.
+        </div> <!--.attribution-->
+      </div><!--.footer__container-->
+    </div><!--.wrapper-->
+  </footer>
 </body>
 </html>
