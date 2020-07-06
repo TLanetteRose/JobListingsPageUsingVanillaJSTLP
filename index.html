@@ -23,12 +23,12 @@
     <input placeholder="Enter the tag to search..." />
   </div><!--.tag__container-->
 
-  <!-- Item Start -->
+  <!-- Photosnap -->
   <div class="job__cards">
    <div class="wrapper">
-    <div class="job-container">
+    <div class="job__container">
       <div class="job__card">
-        <div class="logo-container"><img class="logo" src="images/photosnap.svg" /></div>
+        <div class="logo__container"><img class="logo" src="images/photosnap.svg" /></div>
         <div class="job__data">
           <div class="company-container">
             <h3 class="company">Photosnap</h3>
@@ -57,9 +57,10 @@
           </div><!--.role-container-->
         </div><!--.job__data-->
       </div><!--.job__card-->
-    </div><!--.job-container-->
+    </div><!--.job__container-->
 
-    <div class="job-container">
+    <!--Manage-->
+    <div class="job__container">
       <div class="job__card">
         <div class="logo-container"><img class="logo" src="images/manage.svg" />
         </div>
@@ -77,147 +78,141 @@
               <li>Remote</li>
             </ul><!--.descriptions-->
           </div><!--.role-container-->
+        
+          <ul class="skills">
+            <li><button data-role="fullstack" class="skill">Fullstack</button>
+            </li>
+            <li><button data-level="midweight" class="skill">Midweight</button>
+            </li>
+            <li><button data-languages="python" class="skill">Python</button>
+            </li>
+            <li><button data-tools="react" class="skill">React</button>
+            </li>
+          </ul><!--.skills-->
         </div><!--.job__data-->
-        <ul class="skills">
-          <li><button data-role="fullstack" class="skill">Fullstack</button>
-          </li>
-          <li><button data-level="midweight" class="skill">Midweight</button>
-          </li>
-          <li><button data-languages="python" class="skill">Python</button>
-          </li>
-          <li><button data-tools="react" class="skill">React</button>
-          </li>
-        </ul><!--.skills-->
       </div><!--.job__card-->
-    </div><!--.job-container-->
+    </div><!--.job__container-->
 
     <!--Trista add job container, logo container, change to role from position-->
+    <!--Account-->
+    <div class="job__container">
+      <div class="job__card">
+        <div class="logo-container"><img class="logo" src="images/account.svg" /></div>
+        <div class="job__data">
+          <div class="company-container">
+            <h3 class="company">Account</h3>
+            <div class="highlighted new">New!</div>
+          </div><!--.company-container-->
+          <div class="role-container">
+            <h2 class="role">Junior Frontend Developer</h2>
+            <ul class="job-status">
+              <li class="active">2d ago</li>
+              <li>Part Time</li>
+              <li>USA only</li>
+            </ul><!--.job-status-->
+          </div><!--.role-container-->
     
-    <div class="job__card">
-      <img class="logo" src="images/account.svg" />
-      <div class="job__data">
-        <div class="company-container">
-          <h3 class="company">Account</h3>
-          <div class="highlighted new">New!</div>
-        </div>
-        <!--.company-container-->
-        <div class="position-container">
-          <h2 class="role">Junior Frontend Developer</h2>
-          <ul class="job-status">
-            <li class="active">2d ago</li>
-            <li>Part Time</li>
-            <li>USA only</li>
-          </ul>
-          <!--.descriptions-->
-        </div>
-        <!--.position-container-->
-      </div>
-      <!--.job__data-->
-    </div>
-    <!--.job__card-->
-    <ul class="skills">
-      <li>
-        <button data-role="frontend" class="skill">Frontend</button>
-      </li>
-      <li>
-        <button data-level="junior" class="skill">Junior</button>
-      </li>
-      <li>
-        <button data-languages="javascript" class="skill">JavaScript</button>
-      </li>
-      <li>
-        <button data-tools="react" class="skill">React</button>
-      </li>
-      <li>
-        <button data-tools="sass" class="skill">Sass</button>
-      </li>
-    </ul><!--.skills-->
+          <ul class="skills">
+            <li>
+              <button data-role="frontend" class="skill">Frontend</button>
+            </li>
+            <li>
+              <button data-level="junior" class="skill">Junior</button>
+            </li>
+            <li>
+              <button data-languages="javascript" class="skill">JavaScript</button>
+            </li>
+            <li>
+              <button data-tools="react" class="skill">React</button>
+            </li>
+            <li>
+              <button data-tools="sass" class="skill">Sass</button>
+            </li>
+          </ul><!--.skills-->
+        </div><!--.job__data-->
+      </div><!--.job__card-->
+    </div><!--.job__ontainer-->
+    
+    <!--MyHome-->
+    <div class="job__container">
+      <div class="job__card">
+        <div class="logo-container"><img class="logo" src="images/myhome.svg" /></div>
+        <div class="job__data">
+          <div class="company-container">
+            <h3 class="company">MyHome</h3>
+          </div><!--.company-container-->
+          <div class="role-container">
+            <h2 class="role">Junior Frontend Developer</h2>
+            <ul class="job-status">
+              <li class="active">5d ago</li>
+              <li>Contract</li>
+              <li>USA only</li>
+            </ul><!--.job-status-->
+          </div><!--.role-container-->
+          <ul class="skills">
+            <li>
+              <button data-role="frontend" class="skill">Frontend</button>
+            </li>
+            <li>
+              <button data-level="junior" class="skill">Junior</button>
+            </li>
+            <li>
+              <button data-languages="css" class="skill">CSS</button>
+            </li>
+            <li>
+              <button data-languages="javascript" class="skill">JavaScript</button>
+            </li> 
+          </ul><!--.skills-->
+      </div><!--.job__data-->
+    </div><!--.job__card-->
+  </div><!--.job__container-->
   
+  <!--Loop-->
+  <div class="job__container">
     <div class="job__card">
-      <img class="logo" src="images/myhome.svg" />
-      <div class="job__data">
-        <div class="company-container">
-          <h3 class="company">MyHome</h3>
-        </div>
-        <!--.company-container-->
-        <div class="position-container">
-          <h2 class="role">Junior Frontend Developer</h2>
-          <ul class="job-status">
-            <li class="active">5d ago</li>
-            <li>Contract</li>
-            <li>USA only</li>
-          </ul>
-          <!--.descriptions-->
-        </div>
-        <!--.position-container-->
-      </div>
-      <!--.job__data-->
-    </div>
-    <!--.job__card-->
-    <ul class="skills">
-      <li>
-        <button data-role="frontend" class="skill">Frontend</button>
-      </li>
-      <li>
-        <button data-level="junior" class="skill">Junior</button>
-      </li>
-      <li>
-        <button data-languages="css" class="skill">CSS</button>
-      </li>
-      <li>
-        <button data-languages="javascript" class="skill">JavaScript</button>
-      </li>
-    </ul>
-    <!--.skills-->
-    
-    <div class="job__card">
-      <img class="logo" src="images/loop-studios.svg" />
-      <div class="job__data">
-        <div class="company-container">
-          <h3 class="company">Loop Studios</h3>
-        </div>
-        <!--.company-container-->
-        <div class="position-container">
-          <h2 class="role">Software Engineer</h2>
-          <ul class="job-status">
-            <li class="active">1w ago</li>
-            <li>Full Time</li>
-            <li>Worldwide</li>
-          </ul>
-          <!--.descriptions-->
-        </div>
-        <!--.position-container-->
-      </div>
-      <!--.job__data-->
-    </div>
-    <!--.job__card-->
-    <ul class="skills">
-      <li>
-        <button data-role="fullstack" class="skill">Fullstack</button>
-      </li>
-      <li>
-        <button data-level="midweight" class="skill">Midweight</button>
-      </li>
-      <li>
-        <button data-languages="javascript" class="skill">JavaScript</button>
-      </li>
-      <li>
-        <button data-languages="ruby" class="skill">Ruby</button>
-      </li>
-      <li>
-        <button data-tools="sass" class="skill">Sass</button>
-      </li>
-    </ul>
-    <!--.skills-->
+      <div class="logo-container"><img class="logo" src="images/loop-studios.svg" /></div>
+        <div class="job__data">
+          <div class="company-container">
+            <h3 class="company">Loop Studios</h3>
+          </div><!--.company-container-->
+          <div class="role-container">
+            <h2 class="role">Software Engineer</h2>
+            <ul class="job-status">
+              <li class="active">1w ago</li>
+              <li>Full Time</li>
+              <li>Worldwide</li>
+            </ul><!--.job-status-->
+        </div><!--.role-container-->
+      
+        <ul class="skills">
+          <li>
+            <button data-role="fullstack" class="skill">Fullstack</button>
+          </li>
+          <li>
+            <button data-level="midweight" class="skill">Midweight</button>
+          </li>
+          <li>
+            <button data-languages="javascript" class="skill">JavaScript</button>
+          </li>
+          <li>
+            <button data-languages="ruby" class="skill">Ruby</button>
+          </li>
+          <li>
+            <button data-tools="sass" class="skill">Sass</button>
+          </li>
+        </ul><!--.skills-->
+      </div><!--.job__data-->
+    </div><!--.job__card-->
+  </div><!--.job__container-->
 
     <div class="job__card">
-      <img class="logo" src="images/faceit.svg" />
+      <div class="logo-container"><img class="logo" src="images/faceit.svg" /></div>
       <div class="job__data">
         <div class="company-container">
           <h3 class="company">FaceIt</h3>
         </div>
         <!--.company-container-->
-        <div class="position-container">
+        <div class="role-container">
           <h2 class="role">Junior Backend Developer</h2>
           <ul class="job-status">
             <li class="active">2w ago</li>
@@ -248,14 +243,14 @@
     <!--.skills-->
    
     <div class="job__card">
-      <img class="logo" src="images/shortly.svg" />
+      <div class="logo-container"><img class="logo" src="images/shortly.svg" /></div>
       <div class="job__data">
         <div class="company-container">
           <h3 class="company">Shortly</h3>
         </div>
         <!--.company-container-->
-        <div class="position-container">
-          <h2 class="job__title">Junior Developer</h2>
+        <div class="role-container">
+          <h2 class="role">Junior Developer</h2>
           <ul class="job-status">
             <li class="active">2w ago</li>
             <li>Full Time</li>
@@ -288,14 +283,14 @@
     <!--.skills-->
 
     <div class="job__card">
-      <img class="logo" src="images/photosnap.svg" />
+      <div class="logo-container"><img class="logo" src="images/photosnap.svg" /></div>
       <div class="job__data">
         <div class="company-container">
           <h3 class="company">Insure</h3>
         </div>
         <!--.company-container-->
-        <div class="position-container">
-          <h2 class="job__title">Junior Frontend Developer</h2>
+        <div class="role-container">
+          <h2 class="role">Junior Frontend Developer</h2>
           <ul class="job-status">
             <li class="active">2w ago</li>
             <li>Full Time</li>
@@ -328,14 +323,14 @@
     <!--.skills-->
 
     <div class="job__card">
-      <img class="logo" src="images/eyecam-co.svg" />
+      <div class="logo-container"><img class="logo" src="images/eyecam-co.svg" /></div>
       <div class="job__data">
         <div class="company-container">
           <h3 class="company">Eyecam Co.</h3>
         </div>
         <!--.company-container-->
-        <div class="position-container">
-          <h2 class="job__title">Full Stack Engineer</h2>
+        <div class="role-container">
+          <h2 class="role">Full Stack Engineer</h2>
           <ul class="job-status">
             <li class="active">3w ago</li>
             <li>Full Time</li>
@@ -368,14 +363,14 @@
     <!--.skills-->
 
     <div class="job__card">
-      <img class="logo" src="images/the-air-filter-company.svg" />
+      <div class="logo-container"><img class="logo" src="images/the-air-filter-company.svg" /></div>
       <div class="job__data">
         <div class="company-container">
           <h3 class="company">The Air Filter Company</h3>
         </div>
         <!--.company-container-->
-        <div class="position-container">
-          <h2 class="job__title">Front-end Dev</h2>
+        <div class="role-container">
+          <h2 class="role">Front-end Dev</h2>
           <ul class="job-status">
             <li class="active">1mo ago</li>
             <li>Part Time</li>
