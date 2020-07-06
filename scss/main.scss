@@ -1,3 +1,5 @@
+/* Mobile First Design */
+
 @import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;600;700&display=swap');
 
 /* Variables */
@@ -30,7 +32,11 @@ body {
     margin: 0 auto;
 }
 
-
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
 
 
 
@@ -49,7 +55,19 @@ body {
     position: relative;
 }
 
+/* Job Card Styles */ 
 
+.job__card {
+    padding: 20px 20px 10px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 2px 15px 30px -20px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    position: relative;
+}
 
 
 /* Attribution styles */

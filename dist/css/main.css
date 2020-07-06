@@ -1,3 +1,4 @@
+/* Mobile First Design */
 @import url("https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;600;700&display=swap");
 /* Variables */
 * {
@@ -20,6 +21,12 @@ body {
   margin: 0 auto;
 }
 
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
 /* Header Styles */
 .header {
   background-image: url("/images/bg-header-mobile.svg");
@@ -31,6 +38,27 @@ body {
 
 .header__container {
   min-height: 160px;
+  position: relative;
+}
+
+/* Job Card Styles */
+.job__card {
+  padding: 20px 20px 10px;
+  background-color: white;
+  border-radius: 5px;
+  -webkit-box-shadow: 2px 15px 30px -20px rgba(0, 0, 0, 0.3);
+          box-shadow: 2px 15px 30px -20px rgba(0, 0, 0, 0.3);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 50px;
   position: relative;
 }
 
