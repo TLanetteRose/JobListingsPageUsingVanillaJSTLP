@@ -80,6 +80,49 @@ ul {
     top: -25px;
 }
 
+.logo {
+    width: 100%;
+}
+
+.job__data {
+    margin: 60px 0;
+}
+
+.comopany-container {
+    display: flex;
+    align-items: center;
+}
+
+.company {
+    margin: 0 15px 14px 0;
+    font-size: 15px;
+    font-weight: 700;
+    color: $header-cyan;
+}
+
+.highlighted {
+    display: none;
+    text-transform: uppercase;
+    height: 22px;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 11px;
+    font-weight: 700;
+    padding: 6px 8px 4px;
+    border-radius: 11px;
+    margin: 0 10px 14px 0;
+    color: white;
+}
+
+.new {
+    display: inline-block;
+    background-color: $header-cyan;
+}
+
+.featured {
+    display: inline-block;
+    background-color: $very-dk-gray-cyan;
+}
 
 
 
