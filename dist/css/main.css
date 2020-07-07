@@ -173,7 +173,6 @@ ul {
 }
 
 /* Skills Styles */
-.tags,
 .skills {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -187,7 +186,6 @@ ul {
   margin-top: 20px;
 }
 
-.tag,
 .skill {
   margin: 20px 20px 0 0;
   border: none;
@@ -214,49 +212,67 @@ ul {
   background-color: #5ba4a4;
 }
 
-.tag,
 .skill:active {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
 }
 
-/*
 .tags {
-    position: absolute;
-    background-color: white;
-    width: 100%;
-    bottom: -3px;
-    border-radius: 5px;
-    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.4);
-    padding: 20px 20px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  position: absolute;
+  background-color: white;
+  width: 100%;
+  bottom: -30px;
+  border-radius: 5px;
+  -webkit-box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.4);
+          box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.4);
+  padding: 20px 20px 0px;
 }
 
 .tag {
-    margin: 0 20px 20px 0;
-    padding-right: 40px;
-    position: relative;
+  margin: 0 20px 20px 0;
+  padding-right: 40px;
+  position: relative;
+  border: none;
+  font-family: "Spartan", sans-serif;
+  color: #5ba4a4;
+  font-weight: 700;
+  margin-right: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+  -webkit-transition: all 0.1s ease-in;
+  transition: all 0.1s ease-in;
+  background-color: #eef6f6;
 }
 
 .tag:after {
-    position: absolute;
-    display: block;
-    content: "";
-    top: 0px;
-    bottom: 0px;
-    width: 30px;
-    background-color: var(--header-cyan);
-    right: 0;
-    border-radius: 0 5px 5px 0;
-    background-image: url("https://assets.codepen.io/1148131/icon-remove.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    cursor: pointer;
+  position: absolute;
+  display: block;
+  content: "";
+  top: 0px;
+  width: 30px;
+  background-color: #5ba4a4;
+  right: 0;
+  border-radius: 0 5px 5px 0;
+  background-image: url("/images/icon-remove.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
 }
 
-.tag:hover::after {
-    background-color: $very-dk-gray-cyan;
+.tag:active {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
-*/
+
 .btn-error {
   border: 1px solid #ff5d51;
   -webkit-box-shadow: 0px 0px 10px 3px #ff5d51;

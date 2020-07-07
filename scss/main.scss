@@ -172,7 +172,6 @@ ul {
 }
 
 /* Skills Styles */
-.tags,
 .skills {
     display: flex;
     align-items: center;
@@ -181,7 +180,6 @@ ul {
     margin-top: 20px;
 }
 
-.tag,
 .skill {
     margin: 20px 20px 0 0;
     border: none;
@@ -206,18 +204,20 @@ ul {
     background-color: $header-cyan;
 }
 
-.tag,
 .skill:active {
     transform: scale(1.2);
 }
 
-// Added by JS
-/*
+// Added by JS to Header bar
+
 .tags {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
     position: absolute;
     background-color: white;
     width: 100%;
-    bottom: -3px;
+    bottom: -30px;
     border-radius: 5px;
     box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.4);
     padding: 20px 20px 0px;
@@ -227,6 +227,16 @@ ul {
     margin: 0 20px 20px 0;
     padding-right: 40px;
     position: relative;
+    border: none;
+    font-family: $font-family;
+    color: $header-cyan;
+    font-weight: 700;
+    margin-right: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.1s ease-in;
+    background-color: $filter-tab-lt-gray-cyan;
 }
 
 .tag:after {
@@ -234,21 +244,22 @@ ul {
     display: block;
     content: "";
     top: 0px;
-    bottom: 0px;
     width: 30px;
-    background-color: var(--header-cyan);
+    background-color: $header-cyan;
     right: 0;
     border-radius: 0 5px 5px 0;
-    background-image: url("https://assets.codepen.io/1148131/icon-remove.svg");
+    background-image: url("/images/icon-remove.svg");
     background-repeat: no-repeat;
     background-position: center;
     cursor: pointer;
 }
 
-.tag:hover::after {
-    background-color: $very-dk-gray-cyan;
+.tag:active {
+    transform: scale(1.2);
 }
-*/
+
+
+
 
 .btn-error {
     border: 1px solid #ff5d51;
