@@ -57,7 +57,7 @@ ul {
 
 /* Job Card Styles */ 
 
-.job__card {
+.job__container {
     padding: 20px 20px 10px;
     background-color: white;
     border-radius: 5px;
@@ -69,6 +69,200 @@ ul {
     position: relative;
 }
 
+.job__card {
+    display: flex;
+}
+
+.logo__container {
+    position: absolute;
+    width: 60px; 
+    height: 60px;
+    top: -25px;
+}
+
+.logo {
+    width: 100%;
+}
+
+.job__data {
+    margin: 60px 0;
+}
+
+.company-container {
+    display: flex;
+    align-items: center;
+    margin-top: -30px;
+}
+
+.company {
+    margin: 0 15px 14px 0;
+    font-size: 15px;
+    font-weight: 700;
+    color: $header-cyan;
+}
+
+.highlighted {
+    display: none;
+    text-transform: uppercase;
+    height: 22px;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 11px;
+    font-weight: 700;
+    padding: 6px 8px 4px;
+    border-radius: 11px;
+    margin: 0 10px 14px 0;
+    color: white;
+}
+
+.new {
+    display: inline-block;
+    background-color: $header-cyan;
+}
+
+.featured {
+    display: inline-block;
+    background-color: $very-dk-gray-cyan;
+}
+
+.role {
+    font-size: 18px;
+    margin: 0 0 14px;
+    padding-top: 10px;
+    cursor: pointer;
+}
+
+.job-status {
+    display: flex;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.status {
+    line-height: 17px;
+    list-style: none;
+}
+
+.status:nth-of-type(2){
+    padding: 0 20px;
+    margin: 0 20px;
+    position: relative;
+}
+
+.status:nth-of-type(2):after,
+.status:nth-of-type(2):before {
+    position: absolute;
+    left: 0;
+    display: block;
+    height: 4px;
+    width: 4px;
+    top: calc(50% - 2px);
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    content: "";
+}
+
+.status:nth-of-type(2):after {
+    left: initial;
+    right: 0;
+}
+
+.active {
+    list-style: none;
+    margin-left: 0;
+}
+
+/* Skills Styles */
+.tags,
+.skills {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    border-top: 1px solid gray;
+    margin-top: 20px;
+}
+
+.tag,
+.skill {
+    margin: 20px 20px 0 0;
+    border: none;
+    padding: 9px 10px 5px;
+    font-family: $font-family;
+    color: $header-cyan;
+    font-weight: 700;
+    margin-right: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.1s ease-in;
+    background-color: $filter-tab-lt-gray-cyan;
+}
+
+.skill {
+    cursor: grab;
+}
+
+.skill:hover {
+    color: white;
+    background-color: $header-cyan;
+}
+
+.tag,
+.skill:active {
+    transform: scale(1.2);
+}
+
+// Added by JS
+/*
+.tags {
+    position: absolute;
+    background-color: white;
+    width: 100%;
+    bottom: -3px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.4);
+    padding: 20px 20px 0px;
+}
+
+.tag {
+    margin: 0 20px 20px 0;
+    padding-right: 40px;
+    position: relative;
+}
+
+.tag:after {
+    position: absolute;
+    display: block;
+    content: "";
+    top: 0px;
+    bottom: 0px;
+    width: 30px;
+    background-color: var(--header-cyan);
+    right: 0;
+    border-radius: 0 5px 5px 0;
+    background-image: url("https://assets.codepen.io/1148131/icon-remove.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+
+.tag:hover::after {
+    background-color: $very-dk-gray-cyan;
+}
+*/
+
+.btn-error {
+    border: 1px solid #ff5d51;
+    box-shadow: 0px 0px 10px 3px #ff5d51;
+}
+
+/* Footer */
+footer {
+    margin-top: 100px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100px;
+}
 
 /* Attribution styles */
 
@@ -79,4 +273,24 @@ ul {
 
 .attribution a {
     color: hsl(228, 45%, 44%);
+}
+
+/* Media Queries */
+
+@media (min-width: 900px) {
+    .header {
+        margin-bottom: 60px;
+        background-image: url("/images/bg-header-desktop.svg");
+    }
+    .job__container {
+        margin-bottom: 30px;
+        display: flex;
+        flex-direction: row;
+        box-shadow: 5px 20px 30px -20px rgba(0, 0, 0, 0.3);
+    }
+    .job__card {
+        display: flex;
+        flex-direction: row;
+    }
+
 }
