@@ -15,7 +15,7 @@ $font-size: 15px;
 
 * {
     box-sizing: border-box;
-    outine: 1px solid black;
+    /*outine: 1px solid black;*/
 }
 
 body {
@@ -55,7 +55,6 @@ ul {
     position: relative;
 }
 
-/*
 .tag__container {
     border-radius: 3px;
     background: #ffffff;
@@ -89,7 +88,24 @@ input {
     font-size: 16px;
     flex: 1;
 }
-*/
+
+.tag span {
+    margin-right: 0;
+}
+
+i {
+    background: #5da5a4;
+    color: white;
+    padding: 4px;
+    border-radius: 4px;
+}
+
+i:hover {
+    background: #022124;
+    cursor: pointer;
+}
+
+
 
 /* Job Card Styles */ 
 

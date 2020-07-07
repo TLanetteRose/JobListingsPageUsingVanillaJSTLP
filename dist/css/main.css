@@ -4,7 +4,7 @@
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  outine: 1px solid black;
+  /*outine: 1px solid black;*/
 }
 
 body {
@@ -41,41 +41,66 @@ ul {
   position: relative;
 }
 
-/*
 .tag__container {
-    border-radius: 3px;
-    background: #ffffff;
-    position: absolute;
-    left: 150px;
-    top: 130px;
-    display: flex;
-    flex-wrap: wrap;
-    align-content: flex-start;
+  border-radius: 3px;
+  background: #ffffff;
+  position: absolute;
+  left: 150px;
+  top: 130px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
 }
 
 .tag__container .tag {
-    height: 30px;
-    margin: 5px;
-    padding: 5px 6px;
-    border-radius: 3px;
-    display: flex;
-    align-items: center;
-    color: #333333;
-    background-color: #f0fafb;
-    cursor: default;
+  height: 30px;
+  margin: 5px;
+  padding: 5px 6px;
+  border-radius: 3px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #333333;
+  background-color: #f0fafb;
+  cursor: default;
 }
 
 input {
-    width: 300px;
-    height: 40px;
-    border-radius: 5px;
-    border: 0;
-    padding: 6px 15px;
-    outline: none;
-    font-size: 16px;
-    flex: 1;
+  width: 300px;
+  height: 40px;
+  border-radius: 5px;
+  border: 0;
+  padding: 6px 15px;
+  outline: none;
+  font-size: 16px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
-*/
+
+.tag span {
+  margin-right: 0;
+}
+
+i {
+  background: #5da5a4;
+  color: white;
+  padding: 4px;
+  border-radius: 4px;
+}
+
+i:hover {
+  background: #022124;
+  cursor: pointer;
+}
+
 /* Job Card Styles */
 .card__result {
   padding: 20px 20px 10px;
