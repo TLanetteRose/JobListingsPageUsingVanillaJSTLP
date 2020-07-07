@@ -278,19 +278,6 @@ footer {
 /* Media Queries */
 
 @media (min-width: 900px) {
-    .header {
-        margin-bottom: 60px;
-        background-image: url("/images/bg-header-desktop.svg");
-    }
-    .job__container {
-        margin-bottom: 30px;
-        display: flex;
-        flex-direction: row;
-        box-shadow: 5px 20px 30px -20px rgba(0, 0, 0, 0.3);
-    }
-    .job__card {
-        display: flex;
-        flex-direction: row;
-    }
+    
 
 }
