@@ -55,9 +55,45 @@ ul {
     position: relative;
 }
 
+/*
+.tag__container {
+    border-radius: 3px;
+    background: #ffffff;
+    position: absolute;
+    left: 150px;
+    top: 130px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+.tag__container .tag {
+    height: 30px;
+    margin: 5px;
+    padding: 5px 6px;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    color: #333333;
+    background-color: #f0fafb;
+    cursor: default;
+}
+
+input {
+    width: 300px;
+    height: 40px;
+    border-radius: 5px;
+    border: 0;
+    padding: 6px 15px;
+    outline: none;
+    font-size: 16px;
+    flex: 1;
+}
+*/
+
 /* Job Card Styles */ 
 
-.job__container {
+.card__result {
     padding: 20px 20px 10px;
     background-color: white;
     border-radius: 5px;
@@ -69,7 +105,7 @@ ul {
     position: relative;
 }
 
-.job__card {
+.job__info {
     display: flex;
 }
 
@@ -132,24 +168,24 @@ ul {
     cursor: pointer;
 }
 
-.job-status {
+.job-descriptions {
     display: flex;
     color: rgba(0, 0, 0, 0.5);
 }
 
-.status {
+.description {
     line-height: 17px;
     list-style: none;
 }
 
-.status:nth-of-type(2){
+.description:nth-of-type(2) {
     padding: 0 20px;
     margin: 0 20px;
     position: relative;
 }
 
-.status:nth-of-type(2):after,
-.status:nth-of-type(2):before {
+.description:nth-of-type(2):after,
+.description:nth-of-type(2):before {
     position: absolute;
     left: 0;
     display: block;
@@ -161,7 +197,7 @@ ul {
     content: "";
 }
 
-.status:nth-of-type(2):after {
+.description:nth-of-type(2):after {
     left: initial;
     right: 0;
 }
@@ -177,7 +213,8 @@ ul {
     align-items: center;
     flex-wrap: wrap;
     border-top: 1px solid gray;
-    margin-top: 20px;
+    margin-top: -20px;
+    margin-bottom: 20px;
 }
 
 .skill {
@@ -258,7 +295,9 @@ ul {
     transform: scale(1.2);
 }
 
-
+.tag:hover::after {
+    background-color: $very-dk-gray-cyan;
+}
 
 
 .btn-error {
@@ -289,6 +328,37 @@ footer {
 /* Media Queries */
 
 @media (min-width: 900px) {
+    .header {
+        margin-bottom: 60px;
+        background-image: url("/images/bg-header-desktop.svg");
+    }
+    .tags {
+        padding: 20px 40px;
+    }
+    .card__result {
+        margin-bottom: 30px;
+        padding: 20px 40px 20px;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .job__data {
+    margin: 0 30px;
+    }
+    .logo__container {
+        position: static;
+        width: auto;
+        height: auto;
+    }
+    .company-container {
+        margin-top: 10px;
+    }
+    .skills {
+        border-top: none;
+    }
+    .tag,
+    .skill {
+        margin-top: 60px;
+        margin-bottom: 0;
+    }
     
-
 }
