@@ -114,10 +114,10 @@ A massive thank you to our community sponsors!
             <div class="job__data">
               <div class="company-container">
                 <h3 class="company">Manage</h3>
-                <div class="highlighted new">New!</div>
-                <div class="highlighted featured">Featured</div>
+                <span class="highlighted new">New!</span>
+                <span class="highlighted featured">Featured</span>
               </div><!--.company-container-->
-              <h2 class="role">Fullstack Developer</h2>
+              <h2 class="job__title">Fullstack Developer</h2>
               <ul class="job-descriptions">
                 <li class="description active">1d ago</li>
                 <li class="description">Part Time</li>
