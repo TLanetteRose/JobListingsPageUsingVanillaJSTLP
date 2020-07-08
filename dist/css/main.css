@@ -41,5 +41,136 @@ body {
   border-radius: 10px;
   -webkit-box-shadow: 0px 10px 15px -7px rgba(93, 164, 164, 0.5);
           box-shadow: 0px 10px 15px -7px rgba(93, 164, 164, 0.5);
+  padding: 20px 40px;
+  margin-top: -36px;
+  opacity: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-transition: opacity 1s;
+  transition: opacity 1s;
+}
+
+.search-hidden {
+  opacity: 0;
+}
+
+.search__clear {
+  margin-left: 50px;
+  background-color: transparent;
+  border: none;
+  font-size: 14px;
+  color: #5ba4a4;
+  font-weight: 700px;
+  outline: none;
+  cursor: pointer;
+}
+
+.search__clear:hover {
+  text-decoration: underline;
+}
+
+/* Jobs Styling */
+.jobs {
+  margin-top: 36px;
+  width: 100%;
+  height: auto;
+  display: -ms-grid;
+  display: grid;
+  grid-row-gap: 25px;
+}
+
+.jobs__item {
+  width: 100%;
+  height: auto;
+  padding: 35px 40px;
+  background-color: white;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 10px 15px -7px rgba(93, 164, 164, 0.5);
+          box-shadow: 0px 10px 15px -7px rgba(93, 164, 164, 0.5);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.jobs__column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.jobs__img {
+  width: 90px;
+  height: auto;
+}
+
+.jobs__info {
+  margin-left: 25px;
+  width: auto;
+}
+
+.jobs__company {
+  color: #5ba4a4;
+  font-size: 14px;
+  display: block;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.jobs__title {
+  color: #2c3a3a;
+  font-size: 18px;
+  font-weight: 700;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.jobs__details {
+  margin: 0;
+  padding: 0;
+}
+
+.jobs__details-item {
+  display: inline-block;
+  color: #7b8e8e;
+  font-size: 15px;
+}
+
+.jobs__details-item::after {
+  content: "";
+  width: 3px;
+  height: 3px;
+  border-radius: 3px;
+  background-color: #7b8e8e;
+  display: inline-block;
+  margin: 5px 15px;
+}
+
+/* Footer */
+footer {
+  margin-top: 100px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100px;
+}
+
+/* Attribution styles */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
 }
 /*# sourceMappingURL=main.css.map */
