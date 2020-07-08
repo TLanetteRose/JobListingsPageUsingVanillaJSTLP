@@ -1,5 +1,5 @@
 const tag_active_class = 'tag-active';
-const search_hidden_class = 'search--hidden'
+const search_hidden_class = 'search-hidden'
 const close_tag_class = 'close-tag';
 const tag_class = 'tag';
 
