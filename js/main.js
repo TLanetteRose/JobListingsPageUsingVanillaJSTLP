@@ -4,7 +4,7 @@ const close_tag_class = 'close-tag';
 const tag_class = 'tag';
 
 // Job Listing information
-const jobData = [{
+const jobsListings = [{
         "id": 1,
         "company": "Photosnap",
         "logo": "./images/photosnap.svg",
@@ -239,11 +239,65 @@ function getSearchBarTags(tagValue, searchContentEl) {
     return searchBarTags;
 }
 
-function setJobListings(filterTags) {
-    const jobListingsHTML = jobListings.reduce((acc, currentListing) => {
+function setJobsListings(filterTags) {
+    const jobsListingHTML = jobsListings.reduce((acc, currentListing) => {
         return acc + getJobListingHTML(currentListing, filterTags);
     }, '');
 
     document.getElementById('jobs').innerHTML = jobsListingHTML;
 }
 
+
+// Function to display search bar
+
+function displaySearchWrapper(display = false) {
+    const searchWrapper = document.getElementById('search');
+
+    if (display) {
+        searchWrapper.classList.remove(search_hidden_class);
+
+        return;
+    }
+
+    searchWrapper.classList.add(search_hidden_class);
+}
+
+
+function setSearchbarContent(searchContentEl, tags) {
+    searchContentEl.innerHTML = tags.reduce((acc, currentTag) => {
+        return acc + getTagHTML(currentTag, close_tag_class);
+    }, '');
+}
+
+function resetState(searchContentEl) {
+    searchContentEl.innerHTML = '';
+
+    setJobsListings();
+    displaySearchWrapper(false);
+    toggleClass(targetEl, tag_active_class);
+}
+
+
+window.addEventListener('click', (event) => {
+    const targetEl = event.target;
+    const targetText = targetEl.innerHTML.trim();
+    const searchContentEl = document.getElementById('search-content');
+    const searchBarTags = getSearchBarTags(targetText, searchContentEl);
+
+    if (targetEl.id === 'clear' || !searchBarTags.length) {
+        resetState(searchContentEl);
+
+        return;
+    }
+
+    if (![tag_class, close_tag_class].some(c => targetEl.classList.contains(c))) {
+        return;
+    }
+
+    setSearchbarContent(searchContentEl, searchBarTags);
+    toggleClass(targetEl, tag_active_class);
+    displaySearchWrapper(searchBarTags.length > 0);
+    setJobsListings(searchBarTags);
+});
+
+setJobsListings();

@@ -70,7 +70,7 @@ body {
     border: none;
     font-size: 14px;
     color: $desaturated-dk-cyan;
-    font-weight: 700px;
+    /*font-weight: 700px; */
     outline: none;
     cursor: pointer;
 }
@@ -170,7 +170,7 @@ body {
     color: $desaturated-dk-cyan;
     margin: 7.5px 5px;
     cursor: pointer;
-    transition; background-color 0.2s;
+    transition: background-color 0.2s;
     position: relative;
 }
 
@@ -194,6 +194,15 @@ body {
     background-repeat: no-repeat;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
+}
+
+.tag:hover, .tag--active {
+    background-color: $desaturated-dk-cyan;
+    color: $white;
+}
+
+.close-tag:hover::after {
+    background-color: $very-dk-gray-cyan;
 }
 
 /* Footer */

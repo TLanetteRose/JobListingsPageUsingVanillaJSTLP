@@ -64,7 +64,7 @@ body {
   border: none;
   font-size: 14px;
   color: #5ba4a4;
-  font-weight: 700px;
+  /*font-weight: 700px; */
   outline: none;
   cursor: pointer;
 }
@@ -153,6 +153,58 @@ body {
   background-color: #7b8e8e;
   display: inline-block;
   margin: 5px 15px;
+}
+
+.jobs__details-item:last-child::after {
+  display: none;
+}
+
+/* Tags */
+.tag .close-tag {
+  display: inline-block;
+  width: auto;
+  height: auto;
+  padding: 10px 15px;
+  border-radius: 5px;
+  background-color: #eef6f6;
+  font-weight: 700;
+  font-size: 14px;
+  color: #5ba4a4;
+  margin: 7.5px 5px;
+  cursor: pointer;
+  -webkit-transition: background-color 0.2s;
+  transition: background-color 0.2s;
+  position: relative;
+}
+
+.close-tag {
+  padding-right: 45px;
+}
+
+.close-tag::after {
+  content: "";
+  display: block;
+  width: 35px;
+  height: 100%;
+  background-color: #5ba4a4;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-image: url("/images/icon-remove.svg");
+  background-position: center;
+  background-size: 15px;
+  background-repeat: no-repeat;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.tag:hover, .tag--active {
+  background-color: #5ba4a4;
+  color: white;
+}
+
+.close-tag:hover::after {
+  background-color: #2c3a3a;
 }
 
 /* Footer */
