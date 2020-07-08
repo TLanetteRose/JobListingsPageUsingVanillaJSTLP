@@ -14,58 +14,18 @@
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
 </head>
 <body>
-  <header class="header">
-    <div class="wrapper">
-      <div class="header__container"></div><!--.header__container-->
-    </div>
-  </header>
-  <!--TagContainer
-  <div class="tag__container">
-    <input placeholder="Enter the tag to search..." />
-  </div>
--->
-  <!-- Photosnap -->
-  <div class="job__results">
-    <div class="wrapper">
+  <header class="header"></header>
+  <div class="container">
+    <div id="search" class="search search--hidden">
+      <div class="searc__content" id="search-content"></div><!--.search__content-->
 
-      <div class="card__container">
-        <div class="card__result">
-          <div class="job__info">
-            <div class="logo__container"><img class="logo" src="./images/photosnap.svg" alt="photosnap" /></div><!--.logo__container-->
-            <div class="job__data">
-              <div class="company-container">
-                <h3 class="company">Photosnap</h3>
-                <span class="highlighted new">New!</span>
-                <span class="highlighted featured">Featured</span>
-              </div><!--.company-container-->
-              <h2 class="role">Senior Frontend Developer</h2>
-              <ul class="job-descriptions">
-                <li class="description active">1d ago</li>
-                <li class="description">Full Time</li>
-                <li class="description">USA only</li>
-              </ul><!--.job-descriptions-->
-            </div><!--.job__data-->
-          </div><!--.job__info-->
+      <button id="clear" class="search__clear">
+        Clear
+      </button>
+    </div><!--.search-->
 
-          <ul class="skills">
-            <li><button data-role="frontend" class="skill">Frontend</button>
-            </li>
-            <li><button data-level="senior" class="skill">Senior</button>
-            </li>
-            <li><button data-languages="html" class="skill">HTML</button>
-            </li>
-            <li><button data-languages="css" class="skill">CSS</button>
-            </li>
-            <li><button data-languages="javascript" class="skill">JavaScript</button>
-            </li>
-          </ul><!--.skills--> 
-        </div><!--.card__result-->
-      </div><!--.card__container-->
-
-    
-
-   </div><!--.wrapper-->
-  </div><!--.job__results-->
+    <div class="jobs" id="jobs"></div><!--.jobs-->
+  </div><!--.container-->
 
   <footer>
     <div class="wrapper">
@@ -77,6 +37,6 @@
       </div><!--.footer__container-->
     </div><!--.wrapper-->
   </footer>
-  <script type="module" src="/js/index.js"></script>
+  <script type="text/js" src="/js/index.js"></script>
  </body>
 </html>
