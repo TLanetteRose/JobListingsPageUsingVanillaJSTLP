@@ -100,3 +100,348 @@ A massive thank you to our community sponsors!
 - [Sizzy](https://bit.ly/fm-sizzy) is an extremely useful browser designed specifically to improve a developer's workflow when building websites. You can fire up multiple device emulators and run them all in sync while building out your web pages. Perfect for helping build fully responsive websites!
 - [Diversify Tech](https://bit.ly/fem-diversify-tech) is an amazing resource for underrepresented people in tech. The site features job listings for anyone seeking new opportunities. The resource section is also full of useful links to dive into!
 - [Dracula PRO](https://bit.ly/fem-dracula) is a beautiful dark theme to help keep you focused and productive while you code. The theme isn't just for your editor either. You can also apply it to your most-used apps like your terminal and even Slack!
+
+
+
+
+
+<!--Manage-->
+      <div class="card__container">
+        <div class="card__result">
+          <div class="job__info">
+            <div class="logo__container"><img class="logo" src="images/manage.svg" />
+            </div>
+            <div class="job__data">
+              <div class="company-container">
+                <h3 class="company">Manage</h3>
+                <span class="highlighted new">New!</span>
+                <span class="highlighted featured">Featured</span>
+              </div><!--.company-container-->
+              <h2 class="job__title">Fullstack Developer</h2>
+              <ul class="job-descriptions">
+                <li class="description active">1d ago</li>
+                <li class="description">Part Time</li>
+                <li class="description">Remote</li>
+              </ul><!--.job-descriptions-->
+            </div><!--.job__data-->
+          </div><!--.job__info-->
+        
+          <ul class="skills">
+            <li><button data-role="fullstack" class="skill">Fullstack</button>
+            </li>
+            <li><button data-level="midweight" class="skill">Midweight</button>
+            </li>
+            <li><button data-languages="python" class="skill">Python</button>
+            </li>
+            <li><button data-tools="react" class="skill">React</button>
+            </li>
+          </ul><!--.skills-->
+        </div><!--card__result-->
+      </div><!--.job__container-->
+    
+
+    <!--Account-->
+    <div class="card__container">
+      <div class="card__result">
+        <div class="job__info">
+          <div class="logo__container"><img class="logo" src="images/account.svg" /></div>
+          <div class="job__data">
+            <div class="company-container">
+              <h3 class="company">Account</h3>
+              <div class="highlighted new">New!</div>
+            </div><!--.company-container-->
+            <h2 class="role">Junior Frontend Developer</h2>
+            <ul class="job-descriptions">
+              <li class="description active">2d ago</li>
+              <li class="description">Part Time</li>
+              <li class="description">USA only</li>
+            </ul><!--.job-descriptions-->
+          </div><!--.job__data-->
+        </div><!--.job__info-->
+    
+        <ul class="skills">
+          <li>
+            <button data-role="frontend" class="skill">Frontend</button>
+          </li>
+          <li>
+            <button data-level="junior" class="skill">Junior</button>
+          </li>
+          <li>
+            <button data-languages="javascript" class="skill">JavaScript</button>
+          </li>
+          <li>
+            <button data-tools="react" class="skill">React</button>
+          </li>
+          <li>
+            <button data-tools="sass" class="skill">Sass</button>
+          </li>
+        </ul><!--.skills-->
+      </div><!--.card__result-->
+    </div><!--.job__container-->
+    
+    <!--MyHome-->
+    <div class="job__container">
+      <div class="card__result">
+        <div class="job__info">
+          <div class="logo__container"><img class="logo" src="images/myhome.svg" /></div>
+          <div class="job__data">
+            <div class="company-container">
+              <h3 class="company">MyHome</h3>
+            </div><!--.company-container-->
+    
+            <h2 class="role">Junior Frontend Developer</h2>
+            <ul class="job-descriptions">
+              <li class="description active">5d ago</li>
+              <li class="description">Contract</li>
+              <li class="description">USA only</li>
+            </ul><!--.job-descriptions-->
+          </div><!--.job__data-->
+        </div><!--.job__info-->
+          
+        <ul class="skills">
+          <li>
+            <button data-role="frontend" class="skill">Frontend</button>
+          </li>
+          <li>
+            <button data-level="junior" class="skill">Junior</button>
+          </li>
+          <li>
+            <button data-languages="css" class="skill">CSS</button>
+          </li>
+          <li>
+            <button data-languages="javascript" class="skill">JavaScript</button>
+          </li> 
+        </ul><!--.skills-->
+      </div><!--.card__result-->
+    </div><!--.job__container-->
+  
+    <!--Loop-->
+    <div class="job__container">
+      <div class="card__result">
+        <div class="job__info">
+          <div class="logo__container"><img class="logo" src="images/loop-studios.svg" /></div>
+          <div class="job__data">
+            <div class="company-container">
+              <h3 class="company">Loop Studios</h3>
+            </div><!--.company-container-->
+          
+            <h2 class="role">Software Engineer</h2>
+            <ul class="job-descriptions">
+              <li class="description active">1w ago</li>
+              <li class="description">Full Time</li>
+              <li class="description">Worldwide</li>
+            </ul><!--.job-descriptions-->
+          </div><!--.job__data-->
+        </div><!--.job__info-->
+      
+        <ul class="skills">
+          <li>
+            <button data-role="fullstack" class="skill">Fullstack</button>
+          </li>
+          <li>
+            <button data-level="midweight" class="skill">Midweight</button>
+          </li>
+          <li>
+            <button data-languages="javascript" class="skill">JavaScript</button>
+          </li>
+          <li>
+            <button data-languages="ruby" class="skill">Ruby</button>
+          </li>
+          <li>
+            <button data-tools="sass" class="skill">Sass</button>
+          </li>
+        </ul><!--.skills--> 
+      </div><!--.card__result-->
+    </div><!--.job__container-->
+
+    <!--FaceIt-->
+    <div class="job__container">
+      <div class="card__result">
+        <div class="job__info">
+          <div class="logo__container"><img class="logo" src="images/faceit.svg" /></div>
+          <div class="job__data">
+            <div class="company-container">
+              <h3 class="company">FaceIt</h3>
+            </div><!--.company-container-->
+        
+            <h2 class="role">Junior Backend Developer</h2>
+            <ul class="job-descriptions">
+              <li class="description active">2w ago</li>
+              <li class="description">Full Time</li>
+              <li class="description">UK only</li>
+            </ul><!--.job-descriptions-->
+          </div><!--.job__data-->
+        </div><!--.job__info-->
+    
+        <ul class="skills">
+          <li>
+            <button data-role="backend" class="skill">Backend</button>
+          </li>
+          <li>
+            <button data-level="junior" class="skill">Junior</button>
+          </li>
+          <li>
+            <button data-languages="ruby" class="skill">Ruby</button>
+          </li>
+          <li>
+            <button data-tools="ror" class="skill">RoR</button>
+          </li>
+        </ul><!--.skills-->
+    </div><!--.card__result-->
+    </div><!--.job__container-->
+  
+    <!--Shortly-->
+    <div class="job__container">
+      <div class="card__result">
+        <div class="job__info">
+          <div class="logo__container"><img class="logo" src="images/shortly.svg" /></div>
+          <div class="job__data">
+            <div class="company-container">
+            <h3 class="company">Shortly</h3>
+            </div><!--.company-container-->
+       
+            <h2 class="role">Junior Developer</h2>
+            <ul class="job-descriptions">
+              <li class="description active">2w ago</li>
+              <li class="description">Full Time</li>
+              <li class="description">Worldwide</li>
+            </ul><!--.job-descriptions-->
+          </div><!--.job__data-->
+        </div><!--.job__info-->
+    
+        <ul class="skills">
+          <li>
+            <button data-role="frontend" class="skill">Frontend</button>
+          </li>
+          <li>
+            <button data-level="junior" class="skill">Junior</button>
+          </li>
+          <li>
+            <button data-languages="html" class="skill">HTML</button>
+          </li>
+          <li>
+            <button data-languages="javascript" class="skill">JavaScript</button>
+          </li>
+          <li>
+            <button data-tools="Sass" class="skill"></button>
+          </li>
+        </ul><!--.skills-->
+    </div><!--.card__result-->
+    </div><!--.job__container-->
+
+    <!--Insure-->
+    <div class="job__container">
+      <div class="card__result">
+        <div class="job__info">
+          <div class="logo__container"><img class="logo" src="images/insure.svg" /></div>
+          <div class="job__data">
+            <div class="company-container">
+              <h3 class="company">Insure</h3>
+            </div><!--.company-container-->
+      
+            <h2 class="role">Junior Frontend Developer</h2>
+            <ul class="job-descriptions">
+              <li class="description active">2w ago</li>
+              <li class="description">Full Time</li>
+              <li class="description">USA only</li>
+            </ul><!--.job-descriptions-->
+          </div><!--.job__data-->
+        </div><!--.job__info-->
+     
+        <ul class="skills">
+            <li>
+              <button data-role="frontend" class="skill">Frontend</button>
+            </li>
+            <li>
+              <button data-level="junior" class="skill">Junior</button>
+            </li>
+            <li>
+              <button data-languages="javascript" class="skill">JavaScript</button>
+            </li>
+            <li>
+              <button data-tools="vue" class="skill">Vue</button>
+            </li>
+            <li>
+              <button data-tools="sass" class="skill">Sass</button>
+            </li>
+          </ul><!--.skills-->  
+      </div><!--.card__result-->
+    </div><!--.job__container-->
+
+    <!--Eyecam Co-->
+    <div class="job__container">
+      <div class="card__result">
+        <div class="job__info">
+          <div class="logo__container"><img class="logo" src="images/eyecam-co.svg" /></div>
+          <div class="job__data">
+            <div class="company-container">
+              <h3 class="company">Eyecam Co.</h3>
+            </div><!--.company-container-->
+  
+            <h2 class="role">Full Stack Engineer</h2>
+            <ul class="job-descriptions">
+              <li class="description active">3w ago</li>
+              <li class="description">Full Time</li>
+              <li class="description">Worldwide</li>
+            </ul><!--.job-descriptions-->
+          </div><!--.job__data-->
+        </div><!--.job__info-->
+      
+        <ul class="skills">
+          <li>
+            <button data-role="fullstack" class="skill">Fullstack</button>
+          </li>
+          <li>
+            <button data-level="midweight" class="skill">Midweight</button>
+          </li>
+          <li>
+            <button data-languages="javascript" class="skill">JavaScript</button>
+          </li>
+          <li>
+            <button data-languages="python" class="skill">Python</button>
+          </li>
+          <li>
+            <button data-tools="django" class="skill">Django</button>
+          </li>
+        </ul><!--.skills-->
+      </div><!--.card__result-->
+    </div><!--.job__container-->
+
+    <!--Air Filter Company-->
+    <div class="job__container">
+      <div class="card__result">
+        <div class="job__info">
+          <div class="logo__container"><img class="logo" src="images/the-air-filter-company.svg" /></div>
+          <div class="job__data">
+            <div class="company-container">
+              <h3 class="company">The Air Filter Company</h3>
+            </div><!--.company-container-->
+
+            <h2 class="role">Front-end Dev</h2>
+            <ul class="job-descriptions">
+              <li class="description active">1mo ago</li>
+              <li class="description">Part Time</li>
+              <li class="description">Worldwide</li>
+            </ul><!--.job-descriptions-->
+          </div><!--.job__data-->
+        </div><!--.job__info-->
+      
+        <ul class="skills">
+          <li>
+            <button data-role="frontend" class="skill">Frontend</button>
+          </li>
+          <li>
+            <button data-level="junior" class="skill">Junior</button>
+          </li>
+          <li>
+            <button data-languages="javascript" class="skill">JavaScript</button>
+          </li>
+          <li>
+            <button data-tools="react" class="skill">React</button>
+          </li>
+          <li>
+            <button data-tools="sass" class="skill">Sass</button>
+          </li>
+        </ul><!--.skills-->
+      </div><!--.card__result-->
+    </div><!--.job__container-->
