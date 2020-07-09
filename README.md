@@ -14,7 +14,7 @@ The users will be able to:
 
 ## Completed Design
 
-You can see the my final design here: [Manage Landing Page](https://tlanetterose.github.io/Manage-Landing-PageTLP/)
+You can see the my final design here: [Job Listings Page with VanillaJs](hhttps://tlanetterose.github.io/Job-Listings-Page-Using-VanillaJS-TLP/)
 
 Designer: [T.Lanette Pollard](https://github.com/TLanetteRose)
 
