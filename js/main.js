@@ -173,26 +173,21 @@ function getJobListingHTML(jobData, filterTags = []) {
      
 
     let jobsListingHTML = `
-        <div class="jobs__item">
+        <div class="jobs__item ${jobData.featured ? "job-card featured-job" : "job-card"}">
             <div class="jobs__column jobs__column-left">
                 <img src="${jobData.logo}" alt = "${jobData.company}" class="jobs__img" />
                 <div class="jobs__info">
                     <div class="company__info">
-                        <span class="jobs__company">${
-                        jobData.company} </span>
+                        <span class="jobs__company">${jobData.company} </span>
                         <span class="highlighted new" style="display:${displayNew}">NEW!</span>
                         <span class="highlighted featured" style="display:${featuredJob}">FEATURED</span>
                     </div>
 
-                    <span class="jobs__title">${
-                    jobData.position} </span>
+                    <span class="jobs__title">${jobData.position} </span>
                     <ul class="jobs__details">
-                        <li class="jobs__details-item">${
-                        jobData.postedAt}</li> 
-                        <li class="jobs__details-item">${
-                        jobData.contract}</li> 
-                        <li class="jobs__details-item">${
-                        jobData.location}</li> 
+                        <li class="jobs__details-item">${jobData.postedAt}</li> 
+                        <li class="jobs__details-item">${jobData.contract}</li> 
+                        <li class="jobs__details-item">${jobData.location}</li> 
                     </ul> 
                 </div> 
             </div> 
