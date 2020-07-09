@@ -1,15 +1,16 @@
 # JobListingsPageUsingVanillaJSTLP
-
 Frontend Mentor Challenge 
 
-![Design Preview for Huddle Landing Page with Curved Background Challenge from Frontend Mentor](./design/desktop-preview.jpg) 
+![Design Preview for Job Listings with Filtering from Frontend Mentor](./design/desktop-preview.jpg) 
 
 ## Background
-I completed the Manage Landing Page using Bootstrap, CSS Grid, and Flexbox. It's a mobile-first design starting with screen-size 375px. I used BEM Guidelines for naming my CSS classes. 
+My goal was to complete this project using Vanilla JavaScript. It has been a challenge for me to learn javascript during my coding journey. The main focus of this project is to pull the job information from a separate file (data.json) and dynamically load the information into the webpage. The job listings then needed to be filtered based on given guidelines. 
 
-I have added media queries for the following minimum screen width of 768px. 
+The users will be able to:
+- View the optimal layout for the site depending on their device's screen size
+- See hover states for all interactive elements on the page
+- Filter job listings based on the categories. 
 
-The page design uses background images on different sections including the section above the footer. 
 
 ## Completed Design
 
@@ -18,8 +19,7 @@ You can see the my final design here: [Manage Landing Page](https://tlanetterose
 Designer: [T.Lanette Pollard](https://github.com/TLanetteRose)
 
 ## Attribution
+I referred to a tutorial on Youtube by [Kethmar Salumets](https://youtu.be/j-FUcINCUdM). I needed more guidance in organizing my JavaScript code. This video was very helpful. 
+
 Challenge by [Frontend Mentor](https://www.frontendmentor.io?ref=challenge)
 
-
-
-https://youtu.be/j-FUcINCUdM Tutorial Kethmar Salumets
