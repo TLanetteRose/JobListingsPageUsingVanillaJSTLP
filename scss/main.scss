@@ -190,6 +190,13 @@ body {
 .featured {
     display: inline-block;
     background-color: $very-dk-gray-cyan;
+    
+}
+
+.jobs__item {
+    & .featured {
+    
+    }
 }
 
 /* Tags */
