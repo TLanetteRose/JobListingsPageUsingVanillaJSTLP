@@ -170,6 +170,7 @@ function getJobListingHTML(jobData, filterTags = []) {
     const job_tags_placeholder = '###JOB_TAGS###';
     let displayNew = jobData.new ? "block" : "none";
     let featuredJob = jobData.featured ? "block" : "none";
+     
 
     let jobsListingHTML = `
         <div class="jobs__item">
