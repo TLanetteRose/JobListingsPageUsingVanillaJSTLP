@@ -159,6 +159,47 @@ body {
   display: none;
 }
 
+.company__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 5px;
+}
+
+.jobs__company {
+  margin: 0 15px 14px 0;
+  font-size: 15px;
+  font-weight: 700;
+  color: #5ba4a4;
+}
+
+.highlighted {
+  display: none;
+  text-transform: uppercase;
+  height: 22px;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 6px 8px 4px;
+  border-radius: 11px;
+  margin: 0 10px 14px 0;
+  color: white;
+}
+
+.new {
+  display: inline-block;
+  background-color: #5ba4a4;
+}
+
+.featured {
+  display: inline-block;
+  background-color: #2c3a3a;
+}
+
 /* Tags */
 .tag, .close-tag {
   display: inline-block;
@@ -224,5 +265,57 @@ footer {
 
 .attribution a {
   color: #3e52a3;
+}
+
+@media (max-width: 1120px) {
+  .search {
+    margin-bottom: 50px;
+  }
+  .search__clear {
+    margin-left: 20px;
+  }
+  .jobs {
+    grid-row-gap: 50px;
+  }
+  .jobs__item {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .jobs__info {
+    margin-left: 0;
+    width: 100%;
+  }
+  .jobs__column {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .jobs__column-left {
+    border-bottom: #ABABAB solid 1px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+  }
+  .jobs__column-right {
+    width: 100%;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-left: -5px;
+  }
+  .jobs__img {
+    width: 50px;
+    margin-top: calc(-35px - 25px);
+    margin-bottom: 20px;
+  }
 }
 /*# sourceMappingURL=main.css.map */

@@ -168,16 +168,23 @@ function getTagHTML (tag, tagClasses) {
 
 function getJobListingHTML(jobData, filterTags = []) {
     const job_tags_placeholder = '###JOB_TAGS###';
+    let displayNew = jobData.new ? "block" : "none";
+    let featuredJob = jobData.featured ? "block" : "none";
+
     let jobsListingHTML = `
         <div class="jobs__item">
             <div class="jobs__column jobs__column-left">
                 <img src="${jobData.logo}" alt = "${jobData.company}" class="jobs__img" />
                 <div class="jobs__info">
-                    <span class="jobs__company">${
-                    jobData.company} </span> 
+                    <div class="company__info">
+                        <span class="jobs__company">${
+                        jobData.company} </span>
+                        <span class="highlighted new" style="display:${displayNew}">NEW!</span>
+                        <span class="highlighted featured" style="display:${featuredJob}">FEATURED</span>
+                    </div>
+
                     <span class="jobs__title">${
                     jobData.position} </span>
-
                     <ul class="jobs__details">
                         <li class="jobs__details-item">${
                         jobData.postedAt}</li> 
